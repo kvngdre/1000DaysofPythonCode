@@ -1,5 +1,5 @@
 """"
-type casting.
+managing data types.
 """
 num = 395
 print(num % 10)
