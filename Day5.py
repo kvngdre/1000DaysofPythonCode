@@ -25,3 +25,25 @@ random.shuffle(rand_password)
 
 rand_password = "".join(rand_password).strip()
 print(f"Your random password is: {rand_password}")
+
+# ================================================================================================
+
+# Program to check if a number is a prime number.
+
+
+def prime_checker(num):
+    """"
+    Checks if a given number is a prime number.
+    """
+    is_prime = True
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+    if is_prime:
+        print("It's a prime number.")
+    else:
+        print("It is not a prime number.")
+
+
+n = int(input("Check this number: "))
+prime_checker(num=n)
