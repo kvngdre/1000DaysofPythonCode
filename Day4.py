@@ -3,9 +3,6 @@ lists
 """
 import random
 
-f = [[2, 3], [4, 5], [6, 7, 8]]
-print(len(f))
-print(f[1][1])
 # I learnt to access a nested list you have to access the row you want first then the element in the list.
 # Think of each list in a nested list as a row
 # Some people pass 13 meaning column 1 row 3.
@@ -35,10 +32,10 @@ O O"""
 game_images = [rock, paper, scissors]
 
 print("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.")
-user_choice = input()
+user_choice = int(input())
 computer_choice = random.randint(0, 2)
 
-if user_choice >= 3 or user_choice < 0:
+if user_choice < 0 or user_choice >= 3:
     print("You typed an invalid number. You lose!")
 else:
     print(game_images[user_choice])
@@ -49,4 +46,8 @@ else:
     elif computer_choice == 0 and user_choice == 2:
         print("You lose!")
     elif computer_choice == 2 and user_choice == 0:
+        print("You win!")
+    elif computer_choice > user_choice:
+        print("You lose!")
+    elif computer_choice < user_choice:
         print("You win!")
