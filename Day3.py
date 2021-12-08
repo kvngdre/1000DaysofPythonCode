@@ -102,13 +102,13 @@ second_digit = l + o + v + e
 true_love = int(str(first_digit) + str(second_digit))
 
 if true_love < 10 or true_love > 90:
-    print(f"Your score is {true_love}, you go together like coke and mentos.")
+    print(f"Your score is {true_love}, you go together like coke and mentors.")
 elif 40 <= true_love <= 50:
     print(f"Your score is {true_love}, you are alright together.")
 else:
     print(f"Your score is {true_love}.")
 
-# Treasure Island
+# Treasure Island ====================================
 
 print("""Welcome to Treasure Island.
 Your mission is to find the treasure. Good Luck!""")
